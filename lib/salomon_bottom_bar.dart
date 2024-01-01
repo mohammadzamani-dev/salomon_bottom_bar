@@ -102,7 +102,7 @@ class SalomonBottomBar extends StatelessWidget {
                       hoverColor: _selectedColor.withOpacity(0.1),
                       child: Padding(
                         padding: itemPadding -
-                            (Directionality.of(context) == TextDirection.ltr
+                            (Directionality.of(context) == TextDirection.rtl
                                 ? EdgeInsets.only(right: itemPadding.right * t)
                                 : EdgeInsets.only(left: itemPadding.left * t)),
                         child: Row(
@@ -130,7 +130,7 @@ class SalomonBottomBar extends StatelessWidget {
                                   widthFactor: t,
                                   child: Padding(
                                     padding: Directionality.of(context) ==
-                                            TextDirection.ltr
+                                            TextDirection.rtl
                                         ? EdgeInsets.only(
                                             left: itemPadding.left / 2,
                                             right: itemPadding.right)
